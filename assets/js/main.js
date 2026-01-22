@@ -34,6 +34,7 @@ button.addEventListener("mousemove", (e) => {
         translate(${moveX}px, ${moveY}px)
         rotateX(${rotateX}deg)
         rotateY(${rotateY}deg)
+        scale(2)
     `;
 
     button.style.boxShadow = `
@@ -45,7 +46,7 @@ button.addEventListener("mousemove", (e) => {
 });
 
 button.addEventListener("mouseleave", () => {
-    button.style.transform = "translate(0,0) rotateX(0) rotateY(0)";
+    button.style.transform = "translate(0,0) rotateX(0) rotateY(0) scale(2)";
     button.style.boxShadow = `
         inset 0 -2px 2px var(--dark-color),
         inset 0 2px 2px var(--white-color),
